@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@900&family=Roboto+Mono:wght@200;300&display=swap');
+
+/* Global */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* header */
 .header {
+  display: flex;
+  align-items: center;
   position: fixed;
   height: 100px;
   width: 100%;
@@ -12,26 +19,29 @@
 
 .name {
   width: 30%;
-  line-height: 100px;
   font-size: 30px;
   text-align: center;
   color: white;
   font-family: "M PLUS 1", sans-serif;
-  float: left;
 }
+
 .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
   width: 70%;
-  line-height: 100px;
-  float: right;
   text-align: center;
   color: white;
   font-family: "M PLUS 1", sans-serif;
+
 }
+
 .nav a {
   color: white;
-  padding: 50px 56px;
-  text-decoration: none;
+  text-decoration: none;  
 }
+
 .home {
   padding-top: 100px;
   height: 100vh;
@@ -86,7 +96,7 @@
 }
 .skill {
   width: 100%;
-  height: 150px;
+  height: 100px;
 }
 .skill h1 {
   text-align: center;
@@ -95,7 +105,15 @@
 }
 .logos {
   display: flex;
-  gap: 50px;
+  gap: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.logos2 {
+  display: flex;
+  gap: 100px;
+  padding-top: 25px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -114,50 +132,141 @@
   width: 100%;
   height: 150px;
 }
-.projects div h1{
+.projects div h1 {
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
   padding: 50px 106px;
 }
-.project{
+.project {
+  width: 100%;
   text-align: left;
   font-family: "M PLUS 1", sans-serif;
-  padding: 10px 106px;
 }
-.aboutproject{
+.aboutproject {
   font-family: "M PLUS 1", sans-serif;
   font-family: "Roboto Mono", monospace;
   padding-top: 10px;
-  padding-left: 35px;
+  padding-left: 106px;
   padding-right: 150px;
   padding-top: 10px;
   text-align: left;
 }
-.project h3{
-  padding-top: 30px ;
+
+.project h3 {
+  padding-top: 30px;
+  padding: 10px 106px;
 }
-#contact{
+
+#contact {
   padding-top: 100px;
   height: 100vh;
 }
 
-.contact div h1{
+.contact div h1 {
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
   padding: 50px 106px;
 }
-.social{
+.social {
   display: flex;
   gap: 50px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-.foot footer{
+.foot footer {
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
   padding: 50px 106px;
 }
 
+@media screen and (max-width: 640px) {
+  .name {
+    font-size: 1rem;
+  }
 
+  .nav {
+    gap: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .name {
+    font-size: 1rem;
+  }
+
+  .nav {
+    gap: 0.7rem;
+    font-size: 0.9rem;
+  }
+  
+  .welcome h1 {
+    padding: 50px 10px;
+  }
+  .info p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .resume {
+  padding-top: 100px;
+  }
+
+  .logos2{
+    gap: 50px;
+    padding-top: 50px;
+  }
+  .icon {
+    font-size: 3rem;
+  }
+  .sql {
+    width: 3rem;
+  }
+  .project {
+    padding: 1px 1px;
+    padding-bottom:10px ;
+  }
+  .aboutproject {
+    padding-left: 15px;
+    padding-right: 50px;
+    font-size: small;
+  }
+  .project h3 {
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .social{
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 375px){
+  .name {
+    font-size: 0.9rem;
+  }
+  .nav {
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .info p {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .resume{
+    padding-top: 140px;
+  }
+  .logos2 {
+    gap: 50px;
+    padding-top: 50px;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+  .sql {
+    width: 2rem;
+  }
+  .social{
+    padding-top: 100px;
+  }
+  
+}
 
