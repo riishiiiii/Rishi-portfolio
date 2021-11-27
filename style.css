@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@900&family=Roboto+Mono:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=M+PLUS+1:wght@900&family=Roboto+Mono:wght@200;300&family=Rubik:wght@300&display=swap');
+
 
 /* Global */
 * {
@@ -32,7 +34,6 @@
   gap: 5rem;
   width: 70%;
   text-align: center;
-  color: white;
   font-family: "M PLUS 1", sans-serif;
 
 }
@@ -40,6 +41,7 @@
 .nav a {
   color: white;
   text-decoration: none;  
+  font-size: 20px;
 }
 
 .home {
@@ -49,23 +51,28 @@
 .welcome {
   height: 170px;
   width: 100%;
-  background-color: white;
+  /* background-color: white; */
 }
 .welcome h1 {
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
+  font-size: 35px;
   padding: 50px 106px;
 }
 .info {
   height: 200px;
   width: 100%;
-  background-color: white;
+  /* background-color: white; */
 }
 .info p {
-  font-family: "M PLUS 1", sans-serif;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "M PLUS 1", sans-serif;
+  font-family: "Roboto Mono", monospace; */
+  font-family: 'Inter', sans-serif;
+  font-family: 'M PLUS 1', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Rubik', sans-serif;
   text-align: center;
-  font-size: large;
+  font-size: 30px;
   padding-left: 150px;
   padding-right: 150px;
 }
@@ -73,7 +80,7 @@
   height: 200px;
   width: 100%;
   font-family: "M PLUS 1", sans-serif;
-  background-color: white;
+  /* background-color: white; */
   text-align: center;
 }
 .resume a button:hover {
@@ -97,11 +104,13 @@
 .skill {
   width: 100%;
   height: 100px;
+
 }
 .skill h1 {
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
   padding: 50px 106px;
+  font-size: 35px;
 }
 .logos {
   display: flex;
@@ -136,26 +145,36 @@
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
   padding: 50px 106px;
+  font-size: 35px;
+  
 }
 .project {
   width: 100%;
   text-align: left;
   font-family: "M PLUS 1", sans-serif;
 }
+
+.project h3 {
+  padding-top: 30px;
+  padding: 10px 106px;
+  font-size: 25px;
+}
+
 .aboutproject {
-  font-family: "M PLUS 1", sans-serif;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "M PLUS 1", sans-serif;
+  font-family: "Roboto Mono", monospace; */
+  font-family: 'Inter', sans-serif;
+  font-family: 'M PLUS 1', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Rubik', sans-serif;
   padding-top: 10px;
   padding-left: 106px;
   padding-right: 150px;
   padding-top: 10px;
   text-align: left;
+  font-size: 30px;
 }
 
-.project h3 {
-  padding-top: 30px;
-  padding: 10px 106px;
-}
 
 #contact {
   padding-top: 100px;
@@ -166,8 +185,10 @@
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
   padding: 50px 106px;
+  font-size: 35px;
 }
 .social {
+  padding-top: 100px;
   display: flex;
   gap: 50px;
   text-align: center;
@@ -193,20 +214,28 @@
 
 @media screen and (max-width: 414px) {
   .name {
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   .nav {
     gap: 0.7rem;
     font-size: 0.9rem;
   }
+  .nav a{
+    font-size:14px;
+  }
   
   .welcome h1 {
     padding: 50px 10px;
+    font-size:25px;
   }
   .info p {
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 20px;
+  }
+  .skill h1{
+    font-size:25px;
   }
   .resume {
   padding-top: 100px;
@@ -226,6 +255,9 @@
     padding: 1px 1px;
     padding-bottom:10px ;
   }
+  .project div h1{
+    font-size:25px;
+  }
   .aboutproject {
     padding-left: 15px;
     padding-right: 50px;
@@ -235,24 +267,37 @@
     padding-left: 10px;
     font-size: 15px;
   }
+  .contact div h1{
+    font-size:25px;
+  }
   .social{
     padding-top: 100px;
   }
 }
 @media screen and (max-width: 375px){
   .name {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .nav {
-    gap: 0.5rem;
-    font-size: 0.9rem;
+    gap: 0.7rem;
+    font-size: 0.5rem;
+  }
+  .nav a{
+    font-size:0.8rem;
+  }
+  .welcome h1{
+    font-size: 25px;
   }
   .info p {
     padding-left: 8px;
     padding-right: 8px;
+    font-size: 20px;
   }
   .resume{
     padding-top: 140px;
+  }
+  .skill h1{
+    font-size: 25px;
   }
   .logos2 {
     gap: 50px;
@@ -263,6 +308,12 @@
   }
   .sql {
     width: 2rem;
+  }
+  .projects div h1 {
+    font-size:25px;
+  }
+  .contact div h1 {
+    font-size:25px;
   }
   .social{
     padding-top: 100px;
