@@ -1,47 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@900&family=Roboto+Mono:wght@200;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=M+PLUS+1:wght@900&family=Roboto+Mono:wght@200;300&family=Rubik:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@900&family=Roboto+Mono:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=M+PLUS+1:wght@900&family=Roboto+Mono:wght@200;300&family=Rubik:wght@300&display=swap");
 
 /* Global */
 * {
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #000000;
+  color: white;
+  overflow-x: hidden;
+}
 
 /* header */
 .header {
+  background-color: #463be4;
+  padding: 10px;
+  border-bottom: 1px solid #555;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  height: 40px;
   position: fixed;
-  height: 100px;
   width: 100%;
-  background-color: black;
+  z-index: 1000; 
 }
 
-.name {
-  width: 30%;
-  font-size: 30px;
-  text-align: center;
-  color: white;
+.header h1 {
   font-family: "M PLUS 1", sans-serif;
+  margin-left: 10px;
+  color: white; /* Add this if you want white text */
+}
+.header h1 a{
+  color: white;
+}
+.sixty-percent {
+  width: 60%;
+  height: 50vh;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+}
+
+.forty-percent {
+  width: 40%;
+  height: 50vh;
+  box-sizing: border-box;
+  float: left;
+  justify-content: center;
+  align-items: center;
+}
+.fifty-percent{
+  width: 50%;
+  box-sizing: border-box;
+  border: solid 1px;
+  height: 50vh;
+  float: left;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav {
+  padding-right: 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 5rem;
-  width: 70%;
-  text-align: center;
+  gap: 20px;
   font-family: "M PLUS 1", sans-serif;
-
 }
 
 .nav a {
   color: white;
-  text-decoration: none;  
-  font-size: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #050404;
 }
 
 .home {
@@ -49,45 +84,63 @@
   height: 100vh;
 }
 .welcome {
-  height: 170px;
+  height: 100px;
   width: 100%;
-  /* background-color: white; */
 }
+
 .welcome h1 {
+  color: #463be4;
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
   font-size: 35px;
-  padding: 50px 106px;
+  padding: 10px 10px;
 }
+
 .info {
+  margin-top: 20px;
   height: 200px;
   width: 100%;
-  /* background-color: white; */
+  padding-top: 50px;
 }
+
+.forty-percent img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.profile-pic {
+  width: 50%;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
 .info p {
-  /* font-family: "M PLUS 1", sans-serif;
-  font-family: "Roboto Mono", monospace; */
-  font-family: 'Inter', sans-serif;
-  font-family: 'M PLUS 1', sans-serif;
-  font-family: 'Roboto Mono', monospace;
-  font-family: 'Rubik', sans-serif;
-  text-align: center;
-  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: justify;
+  font-size: 23px;
   padding-left: 150px;
   padding-right: 150px;
 }
+
+
 .resume {
   height: 200px;
   width: 100%;
   font-family: "M PLUS 1", sans-serif;
-  /* background-color: white; */
   text-align: center;
 }
 .resume a button:hover {
   cursor: pointer;
 }
 .resume a button {
-  background-color: black;
+  background-color: #463be4;
   border: none;
   text-decoration: none;
   color: white;
@@ -98,20 +151,22 @@
   font-size: large;
 }
 #skills {
-  padding-top: 100px;
+  padding-top: 90px;
   height: 100vh;
 }
 .skill {
   width: 100%;
   height: 100px;
-
 }
 .skill h1 {
+  margin: auto;
+  color: #463be4;
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
   padding: 50px 106px;
   font-size: 35px;
 }
+
 .logos {
   display: flex;
   gap: 100px;
@@ -120,6 +175,7 @@
   justify-content: center;
 }
 .logos2 {
+  margin-top: 30px;
   display: flex;
   gap: 100px;
   padding-top: 25px;
@@ -127,6 +183,21 @@
   align-items: center;
   justify-content: center;
 }
+.logos img {
+  transition: transform 0.3s ease; }
+
+.logos img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.logos2 img {
+  transition: transform 0.3s ease; }
+
+.logos2 img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 .icon {
   font-size: 5rem;
 }
@@ -142,11 +213,11 @@
   height: 150px;
 }
 .projects div h1 {
+  color: #463be4;
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
   padding: 50px 106px;
   font-size: 35px;
-  
 }
 .project {
   width: 100%;
@@ -155,26 +226,29 @@
 }
 
 .project h3 {
+  color: #463be4;
+  margin-top: 40px;
   padding-top: 30px;
   padding: 10px 106px;
   font-size: 25px;
 }
+.project h3 a{
+  color: #463be4;
+}
+
+a{ 
+  text-decoration: none;
+}
 
 .aboutproject {
-  /* font-family: "M PLUS 1", sans-serif;
-  font-family: "Roboto Mono", monospace; */
-  font-family: 'Inter', sans-serif;
-  font-family: 'M PLUS 1', sans-serif;
-  font-family: 'Roboto Mono', monospace;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Courier New", Courier, monospace;
   padding-top: 10px;
   padding-left: 106px;
   padding-right: 150px;
   padding-top: 10px;
   text-align: left;
-  font-size: 30px;
+  font-size: 23px;
 }
-
 
 #contact {
   padding-top: 100px;
@@ -182,6 +256,7 @@
 }
 
 .contact div h1 {
+  color: #463be4;
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
   padding: 50px 106px;
@@ -221,27 +296,27 @@
     gap: 0.7rem;
     font-size: 0.9rem;
   }
-  .nav a{
-    font-size:14px;
+  .nav a {
+    font-size: 14px;
   }
-  
+
   .welcome h1 {
     padding: 50px 10px;
-    font-size:25px;
+    font-size: 25px;
   }
   .info p {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 20px;
   }
-  .skill h1{
-    font-size:25px;
+  .skill h1 {
+    font-size: 25px;
   }
   .resume {
-  padding-top: 100px;
+    padding-top: 100px;
   }
 
-  .logos2{
+  .logos2 {
     gap: 50px;
     padding-top: 50px;
   }
@@ -253,10 +328,10 @@
   }
   .project {
     padding: 1px 1px;
-    padding-bottom:10px ;
+    padding-bottom: 10px;
   }
-  .project div h1{
-    font-size:25px;
+  .project div h1 {
+    font-size: 25px;
   }
   .aboutproject {
     padding-left: 15px;
@@ -267,14 +342,14 @@
     padding-left: 10px;
     font-size: 15px;
   }
-  .contact div h1{
-    font-size:25px;
+  .contact div h1 {
+    font-size: 25px;
   }
-  .social{
+  .social {
     padding-top: 100px;
   }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   .name {
     font-size: 0.8rem;
   }
@@ -282,10 +357,10 @@
     gap: 0.7rem;
     font-size: 0.5rem;
   }
-  .nav a{
-    font-size:0.8rem;
+  .nav a {
+    font-size: 0.8rem;
   }
-  .welcome h1{
+  .welcome h1 {
     font-size: 25px;
   }
   .info p {
@@ -293,10 +368,10 @@
     padding-right: 8px;
     font-size: 20px;
   }
-  .resume{
+  .resume {
     padding-top: 140px;
   }
-  .skill h1{
+  .skill h1 {
     font-size: 25px;
   }
   .logos2 {
@@ -310,14 +385,12 @@
     width: 2rem;
   }
   .projects div h1 {
-    font-size:25px;
+    font-size: 25px;
   }
   .contact div h1 {
-    font-size:25px;
+    font-size: 25px;
   }
-  .social{
+  .social {
     padding-top: 100px;
   }
-  
 }
-

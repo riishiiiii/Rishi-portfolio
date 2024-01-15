@@ -6,95 +6,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rishi Pandey</title>
     <!-- Font Awesome link -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+    <script
+      src="https://kit.fontawesome.com/51b47cf0fb.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <!-- Custom CSS link -->
     <link rel="stylesheet" href="style.css" />
-  
+    <style>
+      /* Optional: Add some styling for a blinking cursor */
+      #text-container::after {
+          content: '|';
+          display: inline-block;
+          animation: blink 0.7s infinite alternate;
+      }
+
+      @keyframes blink {
+          to {
+              opacity: 0;
+          }
+      }
+  </style>
   </head>
-  <body style="background-color: #eedab8;"> 
+  <body>
     <!-- header starts -->
-  <div class="header">
+    <div class="header">
+      <h1 class="name"><a href="#home">Rishi Pandey</a></h1>
 
-    <h1 class="name">Rishi Pandey</h1>
-
-    <div class="nav">
-      <a href="#home">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact me</a>
-    </div>
-
-  </div>
-  <!-- header ends -->
-     <section class="home" id="home">
-      <div class="welcome">
-        <h1>Welcome to my portfolio</h1>
+      <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact me</a>
       </div>
-      <div class="info">
-        <p>
-            Hello, I'm Rishi Pandey from Bhavnagar, Gujarat.
-           I've completed my electrical engineering degree from GMIT. 
-           After graduation, I emphasized on learning python and eventually gained more interest in the field.
-           From there I extended my avenue of knowledge to machine learning, deep learning, and web development.
-        </p>
+    </div>
+    <!-- header ends -->
+    <section class="home" id="home">
+
+
+      <div class="welcome">
+        <h1 >Hi i am <span id="text-container"> </span></h1>
+        <!-- <h1>Welcome to my portfolio</h1> -->
+      </div>
+      <div class="sixty-percent">
+        <div class="info">
+          <p>
+            Hello, I'm Rishi Pandey from Ahmedabad, Gujarat. My journey into the
+            world of technology began with a keen interest in Python. Over the
+            past 2+ years, I've delved into backend development using FastAPI
+            and Django, gaining valuable experience along the way. Beyond web
+            development, I've explored the captivating realms of machine
+            learning and artificial intelligence, cultivating a deep enthusiasm
+            for pushing the boundaries of AI innovation. Join me on this
+            exciting adventure where technology meets creativity, and together,
+            we can create something extraordinary..
+          </p>
+        </div>
+      </div>
+      <div class="forty-percent">
+        <img class="profile-pic" src="images/profile-pic.png" alt="" />
       </div>
       <div class="resume">
-        <a href="rishi pandey resume jan 2024.pdf" target="_blank"><button class="btn"><i class="fa fa-download"></i> Download Resume</button></a>
-      </div>
-    </section> 
-     <section id="skills">
-      <div class="skill">
-        <h1>Skills</h1>
-        <section >
-          <div class="logos2">
-            <img class= "python" src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="">
-            <img class= "js" src="https://www.vectorlogo.zone/logos/javascript/javascript-horizontal.svg" alt="">
-            <img class= "html" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="">
-            <img class= "css" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="">
-            <img class= "bash" src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-ar21.svg" alt="">
-            <img class= "jp" src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="">
-          </div>
-          <div class="logos2">
-            <img class="sql" src="sql-server.png" alt="">
-            <img class="postgres" src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="">
-            <img class="git" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="">
-            <img class="tensorflow" src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="">
-            <img class="flask" src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg" alt="">
-            <img class="pytorch" src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="">
-            <img class="django" src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="">
-            <img class="vs" src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" alt="">
-          </div> 
-      </section>
+        <a href="cv/rishi pandey resume jan 2024.pdf" target="_blank"
+          ><button class="btn">
+            <i class="fa fa-download"></i> Download Resume
+          </button></a
+        >
       </div>
     </section>
-    
+    <section id="skills">
+      <div class="skill">
+        <h1>Skills</h1>
+        <section>
+          <div class="logos">
+            <img src="icons/python.svg" alt="" />
+            <img src="icons/js.svg" alt="" />
+            <img src="icons/fastapi-1.svg" alt="" />
+            <img src="icons/html.svg" alt="" />
+            <img src="icons/css.svg" alt="" />
+            <img src="icons/bash.svg" alt="" />
+            <img src="icons/jyupyter.svg" alt="" />
+          </div>
+          <div class="logos2">
+            <img src="icons/mongodb-icon-2.svg" alt="" />
+            <img src="icons/pgsql.svg" alt="" />
+            <img src="icons/git.svg" alt="" />
+            <img src="icons/tf.svg" alt="" />
+            <img src="icons/pytorch.svg" alt="" />
+            <img src="icons/django.svg" alt="" />
+            <img src="icons/vs.svg" alt="" />
+          </div>
+        </section>
+      </div>
+    </section>
+
     <section class="projects" id="projects">
       <div>
         <h1>Projects</h1>
         <div class="project">
-        <h3>1. Cat and Dog classification with Deep Learning</h3>
-        <p class="aboutproject">
-          Created a web app using streamlit to classify 
-          images of a dog and a cat.
-          Trained a deep learning model using 
-          CNN with ~90% accuracy.Used libraries tensorflow.</p>
-        <h3>2. Car Price Prediction Using Machine Learning</h3>
-        <p class="aboutproject">
-          Performed data preprocessing.
-          Handling with null values and outliers. Created machine learning model using XGboost.
-          Used libraries like Pandas, Numpy, Scikit- Learn.
-        </p>
-        <h3>3. Wine Quality Prediction Using Machine Learning</h3>
-        <p class="aboutproject">
-          Performed data preprocessing.
-          Handling with null values and outliers. Created machine learning model using XGboost.
-          Used libraries like Pandas, Numpy, Scikit- Learn.
-        </p>
+          <p class="aboutproject">
+            In my relatively short career, I've actively contributed to a range
+            of projects, emphasizing my expertise in both backend development
+            and artificial intelligence (AI). Engaging with frameworks like
+            FastAPI and Django, I've crafted robust backend solutions, ensuring
+            optimal performance and reliability. Simultaneously, I've delved
+            into AI projects, leveraging various libraries to implement advanced
+            algorithms and models. Here are some of those.
+          </p>
+          <h3>1. Digital Twin</h3>
+          <p class="aboutproject">
+            Led the development of a high-performance FastAPI backend from
+            inception, addressing performance challenges experienced with Anvil.
+            Integrated Databricks, AWS S3, and AWS EC2 to create a robust data
+            processing pipeline using PySpark for efficient handling of large
+            datasets. Implemented APIs for training machine learning models with
+            PyTorch on Databricks.
+          </p>
+          <h3>
+            <a href="https://github.com/riishiiiii/knowyourdata"
+              >2. Know Your Data</a
+            >
+          </h3>
+          <p class="aboutproject">
+            Created a web application using streamlit to get best performing
+            model on data provided by user users can visualize data, user can
+            apply preprocessing on data and find a perfect model for predicting
+            new outputs
+          </p>
+          <h3>
+            <a href="https://github.com/riishiiiii/QNA_langchain"
+              >3. Q&A Using Langchain and Openai</a
+            >
+          </h3>
+          <p class="aboutproject">
+            Developed a compact yet impactful project integrating LangChain,
+            OpenAI, and Pinecone to facilitate efficient information retrieval
+            from PDF-formatted books. Leveraging the power of LangChain for
+            language processing, OpenAI for advanced natural language
+            understanding, and Pinecone for robust search capabilities, the
+            project enables users to effortlessly extract answers from any book
+            in PDF format. This innovative solution streamlines the process of
+            accessing relevant information, showcasing the seamless integration
+            of cutting-edge technologies to enhance the user experience in
+            navigating extensive written content.
+          </p>
         </div>
       </div>
     </section>
@@ -103,15 +157,20 @@
         <h1>Contact Me</h1>
       </div>
       <section class="social">
-        <a href="https://www.linkedin.com/in/rishi-pandey-247962182/"><i class="fab fa-linkedin icon"></i></a>
-        <a href="https://github.com/riishiiiii"><i class="fab fa-github icon"></i></a>
-        <a href="mailto:riship4611@gmail.com"><i class="far fa-envelope icon"></i></a>
+        <a href="https://www.linkedin.com/in/rishi-pandey-247962182/"
+          ><i class="fab fa-linkedin icon"></i
+        ></a>
+        <a href="https://github.com/riishiiiii"
+          ><i class="fab fa-github icon"></i
+        ></a>
+        <a href="mailto:riship4611@gmail.com"
+          ><i class="far fa-envelope icon"></i
+        ></a>
       </section>
     </section>
     <div class="foot">
-    <footer>
-      All right reserved
-    </footer>
-  </div> 
+      <footer>All right reserved</footer>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
