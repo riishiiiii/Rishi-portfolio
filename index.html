@@ -13,6 +13,7 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css@2.5.0/css/hover-min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="aos.js"></script>
 </head>
 
 <body style="background-color: #000000; color: #FFFFFF;">
@@ -41,14 +42,14 @@
 
   <!-- home -->
   <section class="pt-5" id="home">
-    <div class="container mx-auto mt-5">
+    <div class="container mx-auto mt-5" data-aos="fade-down" data-aos-duration="1000">
       <h1  style="color: rgb(13,110,253)" class="text-center">HI I AM <span id="text-container"> </span></h1>
     </div>
 
     <div class="container">
       <div class="row mt-5">
         <div class="col-md-8 mx-auto d-flex align-items-center justify-content-center">
-          <p class="lh-base fs-4">
+          <p class="lh-base fs-4" data-aos="fade-right" data-aos-duration="1000">
             Hello, I'm Rishi Pandey from Ahmedabad, Gujarat. My journey into the
             world of technology began with a keen interest in Python. Over the
             past 2+ years, I've delved into backend development using FastAPI
@@ -62,7 +63,7 @@
         </div>
 
         <div class="col-md-4 d-flex align-items-center justify-content-center text-center" style="height: 50vh;">
-          <img src="images/profile-pic.png" alt="" style="max-width: 100%; max-height: 100%;" class="img-fluid">
+          <img src="images/profile-pic.png" alt="" style="max-width: 100%; max-height: 100%;" class="img-fluid" data-aos="fade-left" data-aos-duration="1000">
         </div>
       </div>
     </div>
@@ -77,12 +78,13 @@
   </section>
 
   <!-- Skills -->
-  <section class="pt-5 mt-5" id="skills" data-aos="fade-up">
-    <div class="container text-center mx-auto mt-5 pt-5">
-      <h1 style="color: rgb(13,110,253);">Skills</h1>
+  <section class="pt-5 mt-5" id="skills" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container text-center mx-auto mt-5 pt-5" >
+      <h1 style="color: rgb(13,110,253);" id="skills-heading">Skills</h1>
     </div>
 
-    <div class="container mx-auto mt-5 pt-5">
+
+    <div class="container mx-auto mt-5 pt-5" data-aos="fade-up"  data-aos-duration="1000">
       <div class="row">
         <div class="col-2">
           <img src="icons/python.svg" alt="" title="python" class="img-fluid zoomable-image">
@@ -105,7 +107,7 @@
 
       </div>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-up"  data-aos-duration="1000">
       <div class="row">
         <div class="col-2">
           <img src="icons/jyupyter.svg" alt="" title="jupyter" class="img-fluid zoomable-image">
@@ -127,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-up"  data-aos-duration="1000">
       <div class="row">
         <div class="col-2 d-flex">
           <img src="icons/django.svg" alt="" title="Django" class="img-fluid zoomable-image">
@@ -144,7 +146,7 @@
     <div class="container mt-5 mb-5 pt-3">
       <h1 style="color: rgb(13,110,253)" class="text-center mt-5 mb-5 pt-5 ">Projects</h1>
       <div class="project">
-        <p class="lh-base fs-4">
+        <p class="lh-base fs-4" data-aos="fade-up"  data-aos-duration="1000">
           In my relatively short career, I've actively contributed to a range
           of projects, emphasizing my expertise in both backend development
           and artificial intelligence (AI). Engaging with frameworks like
@@ -153,8 +155,8 @@
           into AI projects, leveraging various libraries to implement advanced
           algorithms and models. Here are some of those.
         </p>
-        <h3  style="color: rgb(13,110,253)">1. Digital Twin </h3>
-        <p class="lh-base fs-4">
+        <h3  style="color: rgb(13,110,253)" data-aos="fade-up"  data-aos-duration="1000">1. Digital Twin </h3>
+        <p class="lh-base fs-4" data-aos="fade-up"  data-aos-duration="1000">
           Led the development of a high-performance FastAPI backend from
           inception, addressing performance challenges experienced with Anvil.
           Integrated Databricks, AWS S3, and AWS EC2 to create a robust data
@@ -162,23 +164,23 @@
           datasets. Implemented APIs for training machine learning models with
           PyTorch on Databricks.
         </p>
-        <h3>
-          <a  style="color: rgb(13,110,253)" class="text-decoration-none" href="https://github.com/riishiiiii/knowyourdata">2.
+        <h3 data-aos="fade-up"  data-aos-duration="1000">
+          <a style="color: rgb(13,110,253)" class="text-decoration-none" href="https://github.com/riishiiiii/knowyourdata">2.
             Know
             Your Data</a>
         </h3>
-        <p class="lh-base fs-4">
+        <p class="lh-base fs-4" data-aos="fade-up"  data-aos-duration="1000">
           Created a web application using streamlit to get the best-performing
           model on data provided by users. Users can visualize data, apply
           preprocessing on data, and find a perfect model for predicting
           new outputs.
         </p>
-        <h3>
-          <a  style="color: rgb(13,110,253)" class="text-decoration-none" href="https://github.com/riishiiiii/QNA_langchain">3.
+        <h3 data-aos="fade-up" data-aos-duration="1000">
+          <a style="color: rgb(13,110,253)" class="text-decoration-none" href="https://github.com/riishiiiii/QNA_langchain">3.
             Q&A
             Using Langchain and Openai</a>
         </h3>
-        <p class="lh-base fs-4">
+        <p class="lh-base fs-4" data-aos="fade-up"  data-aos-duration="1000">
           Developed a compact yet impactful project integrating LangChain,
           OpenAI, and Pinecone to facilitate efficient information retrieval
           from PDF-formatted books. Leveraging the power of LangChain for
