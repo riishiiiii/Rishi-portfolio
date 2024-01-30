@@ -1,396 +1,81 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@900&family=Roboto+Mono:wght@200;300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=M+PLUS+1:wght@900&family=Roboto+Mono:wght@200;300&family=Rubik:wght@300&display=swap");
 
-/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
-  background-color: #000000;
-  color: white;
-  overflow-x: hidden;
+  position: relative;
+  font-family: "Mukta", sans-serif;
 }
 
-/* header */
-.header {
-  background-color: #463be4;
-  padding: 10px;
-  border-bottom: 1px solid #555;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 40px;
+#particles-js {
   position: fixed;
   width: 100%;
-  z-index: 1000; 
+  height: 100%;
+  z-index: -1;
 }
 
-.header h1 {
-  font-family: "M PLUS 1", sans-serif;
-  margin-left: 10px;
-  color: white; /* Add this if you want white text */
-}
-.header h1 a{
-  color: white;
-}
-.sixty-percent {
-  width: 60%;
-  height: 50vh;
-  box-sizing: border-box;
-  float: left;
-  position: relative;
+.social-icons {
+  font-size: 2rem;
+  margin-right: 10px;
 }
 
-.forty-percent {
-  width: 40%;
-  height: 50vh;
-  box-sizing: border-box;
-  float: left;
-  justify-content: center;
-  align-items: center;
-}
-.fifty-percent{
-  width: 50%;
-  box-sizing: border-box;
-  border: solid 1px;
-  height: 50vh;
-  float: left;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav {
-  padding-right: 30px;
-  display: flex;
-  gap: 20px;
-  font-family: "M PLUS 1", sans-serif;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.nav a:hover {
-  color: #050404;
-}
-
-.home {
-  padding-top: 100px;
-  height: 100vh;
-}
-.welcome {
-  height: 100px;
-  width: 100%;
-}
-
-.welcome h1 {
-  color: #463be4;
-  text-align: center;
-  font-family: "M PLUS 1", sans-serif;
-  font-size: 35px;
-  padding: 10px 10px;
-}
-
-.info {
-  margin-top: 20px;
-  height: 200px;
-  width: 100%;
-  padding-top: 50px;
-}
-
-.forty-percent img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  margin: auto;
-}
-
-.profile-pic {
-  width: 50%;
+.zoomable-image {
   transition: transform 0.3s ease;
 }
 
-.profile-pic:hover {
+.zoomable-image:hover {
   transform: scale(1.1);
-  cursor: pointer;
+}
+
+#custom-cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#custom-cursor::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #3498db;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease;
+}
+
+#custom-cursor.hovered {
+  background-color: #3498db;
+}
+
+#custom-cursor.hovered::before {
+  background-color: transparent;
 }
 
 
-.info p {
-  font-family: "Courier New", Courier, monospace;
-  text-align: justify;
-  font-size: 23px;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-
-.resume {
-  height: 200px;
-  width: 100%;
-  font-family: "M PLUS 1", sans-serif;
-  text-align: center;
-}
-.resume a button:hover {
-  cursor: pointer;
-}
-.resume a button {
-  background-color: #463be4;
-  border: none;
-  text-decoration: none;
-  color: white;
-  text-align: center;
+#text-container::after {
+  content: '|';
   display: inline-block;
-  font-family: "M PLUS 1", sans-serif;
-  padding: 15px 40px;
-  font-size: large;
-}
-#skills {
-  padding-top: 90px;
-  height: 100vh;
-}
-.skill {
-  width: 100%;
-  height: 100px;
-}
-.skill h1 {
-  margin: auto;
-  color: #463be4;
-  text-align: center;
-  font-family: "M PLUS 1", sans-serif;
-  padding: 50px 106px;
-  font-size: 35px;
+  animation: blink 0.7s infinite alternate;
 }
 
-.logos {
-  display: flex;
-  gap: 100px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.logos2 {
-  margin-top: 30px;
-  display: flex;
-  gap: 100px;
-  padding-top: 25px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.logos img {
-  transition: transform 0.3s ease; }
-
-.logos img:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-.logos2 img {
-  transition: transform 0.3s ease; }
-
-.logos2 img:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-.icon {
-  font-size: 5rem;
-}
-.sql {
-  width: 5rem;
-}
-#projects {
-  padding-top: 100px;
-  height: 100vh;
-}
-.projects div {
-  width: 100%;
-  height: 150px;
-}
-.projects div h1 {
-  color: #463be4;
-  text-align: center;
-  font-family: "M PLUS 1", sans-serif;
-  padding: 50px 106px;
-  font-size: 35px;
-}
-.project {
-  width: 100%;
-  text-align: left;
-  font-family: "M PLUS 1", sans-serif;
-}
-
-.project h3 {
-  color: #463be4;
-  margin-top: 40px;
-  padding-top: 30px;
-  padding: 10px 106px;
-  font-size: 25px;
-}
-.project h3 a{
-  color: #463be4;
-}
-
-a{ 
-  text-decoration: none;
-}
-
-.aboutproject {
-  font-family: "Courier New", Courier, monospace;
-  padding-top: 10px;
-  padding-left: 106px;
-  padding-right: 150px;
-  padding-top: 10px;
-  text-align: left;
-  font-size: 23px;
-}
-
-#contact {
-  padding-top: 100px;
-  height: 100vh;
-}
-
-.contact div h1 {
-  color: #463be4;
-  text-align: center;
-  font-family: "M PLUS 1", sans-serif;
-  padding: 50px 106px;
-  font-size: 35px;
-}
-.social {
-  padding-top: 100px;
-  display: flex;
-  gap: 50px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.foot footer {
-  text-align: center;
-  font-family: "M PLUS 1", sans-serif;
-  padding: 50px 106px;
-}
-
-@media screen and (max-width: 640px) {
-  .name {
-    font-size: 1rem;
-  }
-
-  .nav {
-    gap: 1.5rem;
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .name {
-    font-size: 14px;
-  }
-
-  .nav {
-    gap: 0.7rem;
-    font-size: 0.9rem;
-  }
-  .nav a {
-    font-size: 14px;
-  }
-
-  .welcome h1 {
-    padding: 50px 10px;
-    font-size: 25px;
-  }
-  .info p {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 20px;
-  }
-  .skill h1 {
-    font-size: 25px;
-  }
-  .resume {
-    padding-top: 100px;
-  }
-
-  .logos2 {
-    gap: 50px;
-    padding-top: 50px;
-  }
-  .icon {
-    font-size: 3rem;
-  }
-  .sql {
-    width: 3rem;
-  }
-  .project {
-    padding: 1px 1px;
-    padding-bottom: 10px;
-  }
-  .project div h1 {
-    font-size: 25px;
-  }
-  .aboutproject {
-    padding-left: 15px;
-    padding-right: 50px;
-    font-size: small;
-  }
-  .project h3 {
-    padding-left: 10px;
-    font-size: 15px;
-  }
-  .contact div h1 {
-    font-size: 25px;
-  }
-  .social {
-    padding-top: 100px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .name {
-    font-size: 0.8rem;
-  }
-  .nav {
-    gap: 0.7rem;
-    font-size: 0.5rem;
-  }
-  .nav a {
-    font-size: 0.8rem;
-  }
-  .welcome h1 {
-    font-size: 25px;
-  }
-  .info p {
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 20px;
-  }
-  .resume {
-    padding-top: 140px;
-  }
-  .skill h1 {
-    font-size: 25px;
-  }
-  .logos2 {
-    gap: 50px;
-    padding-top: 50px;
-  }
-  .icon {
-    font-size: 2rem;
-  }
-  .sql {
-    width: 2rem;
-  }
-  .projects div h1 {
-    font-size: 25px;
-  }
-  .contact div h1 {
-    font-size: 25px;
-  }
-  .social {
-    padding-top: 100px;
+@keyframes blink {
+  to {
+    opacity: 0;
   }
 }

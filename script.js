@@ -19,4 +19,4 @@ function updateText() {
 }
 
 // Set interval to update text every 100 milliseconds
-setInterval(updateText, 150);
+setInterval(updateText, 250);

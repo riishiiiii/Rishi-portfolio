@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rishi Pandey</title>
-    <!-- Font Awesome link -->
-    <script
-      src="https://kit.fontawesome.com/51b47cf0fb.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Custom CSS link -->
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      /* Optional: Add some styling for a blinking cursor */
-      #text-container::after {
-          content: '|';
-          display: inline-block;
-          animation: blink 0.7s infinite alternate;
-      }
 
-      @keyframes blink {
-          to {
-              opacity: 0;
-          }
-      }
-  </style>
-  </head>
-  <body>
-    <!-- header starts -->
-    <div class="header">
-      <h1 class="name"><a href="#home">Rishi Pandey</a></h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Rishi Pandey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css@2.5.0/css/hover-min.css">
+  <script src="https://kit.fontawesome.com/51b47cf0fb.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css@2.5.0/css/hover-min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      <div class="nav">
-        <a href="#home">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact me</a>
+<body style="background-color: #000000; color: #FFFFFF;">
+  <div id="particles-js"> </div>
+
+  <!-- nav bar -->
+  <section id="nav">
+    <nav class="navbar navbar-expand-lg position-fixed fixed-top"  data-bs-theme="dark" style="background-color: #000000;">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-3 fs-4" href="#home">Rishi Pandey</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav ">
+            <a class="nav-link active fs-4" aria-current="page" href="#home">Home</a>
+            <a class="nav-link active fs-4" href="#skills">Skills</a>
+            <a class="nav-link active fs-4" href="#projects">Projects</a>
+            <a class="nav-link active fs-4" href="#contact-me" aria-disabled="true">Contacts</a>
+          </div>
+        </div>
       </div>
+    </nav>
+  </section>
+
+  <!-- home -->
+  <section class="pt-5" id="home">
+    <div class="container mx-auto mt-5">
+      <h1  style="color: rgb(13,110,253)" class="text-center">Hi i am <span id="text-container"> </span></h1>
     </div>
-    <!-- header ends -->
-    <section class="home" id="home">
 
-
-      <div class="welcome">
-        <h1 >Hi i am <span id="text-container"> </span></h1>
-        <!-- <h1>Welcome to my portfolio</h1> -->
-      </div>
-      <div class="sixty-percent">
-        <div class="info">
-          <p>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-8 mx-auto d-flex align-items-center justify-content-center">
+          <p class="lh-base fs-4">
             Hello, I'm Rishi Pandey from Ahmedabad, Gujarat. My journey into the
             world of technology began with a keen interest in Python. Over the
             past 2+ years, I've delved into backend development using FastAPI
@@ -61,116 +60,178 @@
             we can create something extraordinary..
           </p>
         </div>
-      </div>
-      <div class="forty-percent">
-        <img class="profile-pic" src="images/profile-pic.png" alt="" />
-      </div>
-      <div class="resume">
-        <a href="cv/rishi pandey resume jan 2024.pdf" target="_blank"
-          ><button class="btn">
-            <i class="fa fa-download"></i> Download Resume
-          </button></a
-        >
-      </div>
-    </section>
-    <section id="skills">
-      <div class="skill">
-        <h1>Skills</h1>
-        <section>
-          <div class="logos">
-            <img src="icons/python.svg" alt="" />
-            <img src="icons/js.svg" alt="" />
-            <img src="icons/fastapi-1.svg" alt="" />
-            <img src="icons/html.svg" alt="" />
-            <img src="icons/css.svg" alt="" />
-            <img src="icons/bash.svg" alt="" />
-            <img src="icons/jyupyter.svg" alt="" />
-          </div>
-          <div class="logos2">
-            <img src="icons/mongodb-icon-2.svg" alt="" />
-            <img src="icons/pgsql.svg" alt="" />
-            <img src="icons/git.svg" alt="" />
-            <img src="icons/tf.svg" alt="" />
-            <img src="icons/pytorch.svg" alt="" />
-            <img src="icons/django.svg" alt="" />
-            <img src="icons/vs.svg" alt="" />
-          </div>
-        </section>
-      </div>
-    </section>
 
-    <section class="projects" id="projects">
-      <div>
-        <h1>Projects</h1>
-        <div class="project">
-          <p class="aboutproject">
-            In my relatively short career, I've actively contributed to a range
-            of projects, emphasizing my expertise in both backend development
-            and artificial intelligence (AI). Engaging with frameworks like
-            FastAPI and Django, I've crafted robust backend solutions, ensuring
-            optimal performance and reliability. Simultaneously, I've delved
-            into AI projects, leveraging various libraries to implement advanced
-            algorithms and models. Here are some of those.
-          </p>
-          <h3>1. Digital Twin</h3>
-          <p class="aboutproject">
-            Led the development of a high-performance FastAPI backend from
-            inception, addressing performance challenges experienced with Anvil.
-            Integrated Databricks, AWS S3, and AWS EC2 to create a robust data
-            processing pipeline using PySpark for efficient handling of large
-            datasets. Implemented APIs for training machine learning models with
-            PyTorch on Databricks.
-          </p>
-          <h3>
-            <a href="https://github.com/riishiiiii/knowyourdata"
-              >2. Know Your Data</a
-            >
-          </h3>
-          <p class="aboutproject">
-            Created a web application using streamlit to get best performing
-            model on data provided by user users can visualize data, user can
-            apply preprocessing on data and find a perfect model for predicting
-            new outputs
-          </p>
-          <h3>
-            <a href="https://github.com/riishiiiii/QNA_langchain"
-              >3. Q&A Using Langchain and Openai</a
-            >
-          </h3>
-          <p class="aboutproject">
-            Developed a compact yet impactful project integrating LangChain,
-            OpenAI, and Pinecone to facilitate efficient information retrieval
-            from PDF-formatted books. Leveraging the power of LangChain for
-            language processing, OpenAI for advanced natural language
-            understanding, and Pinecone for robust search capabilities, the
-            project enables users to effortlessly extract answers from any book
-            in PDF format. This innovative solution streamlines the process of
-            accessing relevant information, showcasing the seamless integration
-            of cutting-edge technologies to enhance the user experience in
-            navigating extensive written content.
-          </p>
+        <div class="col-md-4 d-flex align-items-center justify-content-center text-center" style="height: 50vh;">
+          <img src="images/profile-pic.png" alt="" style="max-width: 100%; max-height: 100%;" class="img-fluid">
         </div>
       </div>
-    </section>
-    <section class="contact" id="contact">
-      <div>
-        <h1>Contact Me</h1>
-      </div>
-      <section class="social">
-        <a href="https://www.linkedin.com/in/rishi-pandey-247962182/"
-          ><i class="fab fa-linkedin icon"></i
-        ></a>
-        <a href="https://github.com/riishiiiii"
-          ><i class="fab fa-github icon"></i
-        ></a>
-        <a href="mailto:riship4611@gmail.com"
-          ><i class="far fa-envelope icon"></i
-        ></a>
-      </section>
-    </section>
-    <div class="foot">
-      <footer>All right reserved</footer>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+
+    <div class="container mx-auto mt-5 text-center">
+      <a href="cv/rishi pandey resume jan 2024.pdf" target="_blank" class="btn btn-primary fs-4">
+        <i class="fa fa-download"></i> Download Resume
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Skills -->
+  <section class="pt-5 mt-5" id="skills" data-aos="fade-up">
+    <div class="container text-center mx-auto mt-5 pt-5">
+      <h1 style="color: rgb(13,110,253);">Skills</h1>
+    </div>
+
+    <div class="container mx-auto mt-5 pt-5">
+      <div class="row">
+        <div class="col-2">
+          <img src="icons/python.svg" alt="" title="python" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2">
+          <img src="icons/js.svg" alt="" title="javascript" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2">
+          <img src="icons/fastapi-1.svg" alt="" title="FastAPI" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2">
+          <img src="icons/html.svg" alt="" title="html" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2">
+          <img src="icons/css.svg" alt="" title="css" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2">
+          <img src="icons/bash.svg" alt="" title="bash" class="img-fluid zoomable-image">
+        </div>
+
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-2">
+          <img src="icons/jyupyter.svg" alt="" title="jupyter" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2">
+          <img src="icons/mongodb-icon-2.svg" alt="" title="mongodb" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2">
+          <img src="icons/pgsql.svg" alt="" title="postgres SQL" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2">
+          <img src="icons/git.svg" alt="" title="GIT" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2">
+          <img src="icons/tf.svg" alt="" title="TensorFlow" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2">
+          <img src="icons/pytorch.svg" alt="" title="Pytorch" class="img-fluid zoomable-image">
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-2 d-flex">
+          <img src="icons/django.svg" alt="" title="Django" class="img-fluid zoomable-image">
+        </div>
+        <div class="col-2 d-flex ">
+          <img src="icons/vs.svg" alt="" title="vs code" class="img-fluid zoomable-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section data-aos="fade-up" id="projects" class="mt-5 pt-5">
+    <div class="container mt-5 mb-5 pt-3">
+      <h1 style="color: rgb(13,110,253)" class="text-center mt-5 mb-5 pt-5 ">Projects</h1>
+      <div class="project">
+        <p class="lh-base fs-4">
+          In my relatively short career, I've actively contributed to a range
+          of projects, emphasizing my expertise in both backend development
+          and artificial intelligence (AI). Engaging with frameworks like
+          FastAPI and Django, I've crafted robust backend solutions, ensuring
+          optimal performance and reliability. Simultaneously, I've delved
+          into AI projects, leveraging various libraries to implement advanced
+          algorithms and models. Here are some of those.
+        </p>
+        <h3  style="color: rgb(13,110,253)">1. Digital Twin </h3>
+        <p class="lh-base fs-4">
+          Led the development of a high-performance FastAPI backend from
+          inception, addressing performance challenges experienced with Anvil.
+          Integrated Databricks, AWS S3, and AWS EC2 to create a robust data
+          processing pipeline using PySpark for efficient handling of large
+          datasets. Implemented APIs for training machine learning models with
+          PyTorch on Databricks.
+        </p>
+        <h3>
+          <a  style="color: rgb(13,110,253)" class="text-decoration-none" href="https://github.com/riishiiiii/knowyourdata">2.
+            Know
+            Your Data</a>
+        </h3>
+        <p class="lh-base fs-4">
+          Created a web application using streamlit to get the best-performing
+          model on data provided by users. Users can visualize data, apply
+          preprocessing on data, and find a perfect model for predicting
+          new outputs.
+        </p>
+        <h3>
+          <a  style="color: rgb(13,110,253)" class="text-decoration-none" href="https://github.com/riishiiiii/QNA_langchain">3.
+            Q&A
+            Using Langchain and Openai</a>
+        </h3>
+        <p class="lh-base fs-4">
+          Developed a compact yet impactful project integrating LangChain,
+          OpenAI, and Pinecone to facilitate efficient information retrieval
+          from PDF-formatted books. Leveraging the power of LangChain for
+          language processing, OpenAI for advanced natural language
+          understanding, and Pinecone for robust search capabilities, the
+          project enables users to effortlessly extract answers from any book
+          in PDF format. This innovative solution streamlines the process of
+          accessing relevant information, showcasing the seamless integration
+          of cutting-edge technologies to enhance the user experience in
+          navigating extensive written content.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section id="contact-me" class="mt-5 pt-5">
+    <footer class="bg-trans text-white p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Contact Information</h5>
+            <p>Email: rishi4611@gmail.com</p>
+            <p>Phone: +91 9510310510</p>
+          </div>
+          <div class="col-md-6">
+            <h5>Follow Me</h5>
+
+            <a href="https://twitter.com/Riishiiiiii" target="_blank" class="social-icons hvr-grow"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/rishi-pandey-247962182/" target="_blank"
+              class="social-icons hvr-grow"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/riishiiiii" target="_blank" class="social-icons hvr-grow"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+  <div id="custom-cursor"></div>
+
+  <script src="custom-cursor.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="particles-config.js"></script>
+</body>
+
 </html>
