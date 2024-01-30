@@ -1,7 +1,7 @@
 const textContainer = document.getElementById('text-container');
 const texts = [
-    'Python developer',
-    'AI Enthusiast',    
+    'PYTHON DEVELOPER',
+    'AI ENTHUSIAST',    
 ];
 
 let currentTextIndex = 0;
