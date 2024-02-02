@@ -17,7 +17,7 @@
 </head>
 
 <body style="background-color: #000000; color: #FFFFFF;">
-  <div id="particles-js"> </div>
+  <!-- <div id="particles-js"> </div> -->
 
   <!-- nav bar -->
   <section id="nav">
@@ -209,7 +209,14 @@
       </div>
     </div>
   </section>
+<section>
+  <div class="container mt-5 pt-5" data-aos="fade-up"  data-aos-duration="1000">
+    <h3 style="color: rgb(13,110,253)" class="mb-3">My Last Played Songs</h3>
+    <div id="tracks-container" class="row mt-1"></div>
 
+  </div>
+
+</section>
   <!-- footer -->
   <section id="contact-me" class="mt-5 pt-5">
     <footer class="bg-trans text-white p-4">
@@ -248,6 +255,7 @@
     AOS.init();
   </script>
   <script src="particles-config.js"></script>
+  <script src="lastfm.js"></script>
 </body>
 
 </html>
