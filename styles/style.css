@@ -74,6 +74,17 @@ body {
   animation: blink 0.7s infinite alternate;
 }
 
+/* Additional styling for uniform card size */
+.track-card {
+  width: 140px; /* Set your desired fixed width for the card */
+  margin-bottom: 20px;
+  overflow-y: hidden; /* Optional: Add margin for spacing between cards */
+}
+
+.track-card p .track-card h5{
+  overflow: hidden;
+}
+
 @keyframes blink {
   to {
     opacity: 0;
