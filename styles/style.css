@@ -1,5 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&family=Ysabeau+SC:wght@1..1000&display=swap');
+
 
 
 * {
@@ -9,7 +11,7 @@
 
 body {
   position: relative;
-  font-family: "Mukta", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 #particles-js {
