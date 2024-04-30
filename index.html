@@ -16,21 +16,23 @@
   <script src="aos.js"></script>
 </head>
 
-<body style="background-color: #000000; color: #FFFFFF;">
+<body >
   <div id="particles-js"> </div>
-
-  <!-- nav bar -->
+  <!-- Navigation -->
   <section id="nav">
-    <nav class="navbar navbar-expand-lg position-fixed fixed-top" data-bs-theme="dark"
-      style="background-color: #000000;">
+    <nav class="navbar navbar-expand-lg position-fixed fixed-top" data-bs-theme="dark" style="background-color: #000000;">
       <div class="container-fluid">
-        <a class="navbar-brand fs-4" href="#home">Rishi Pandey</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand fs-4" href="#home">Rishi Pandey</a>
+          <a class="navbar-brand fs-4" id="modeToggle">
+            <img src="/icons/light-mode.svg" alt="Light Mode" id="modeIcon">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav ">
+          <div class="navbar-nav">
             <a class="nav-link active fs-4" aria-current="page" href="#home">Home</a>
             <a class="nav-link active fs-4" href="#skills">Skills</a>
             <a class="nav-link active fs-4" href="#projects">Projects</a>
@@ -40,13 +42,13 @@
       </div>
     </nav>
   </section>
-
+  
+  
   <!-- home -->
   <section class="pt-5" id="home">
     <div class="container mx-auto mt-5" data-aos="fade-down" data-aos-duration="1000">
       <h1 style="color: rgb(13,110,253)" class="text-center">HI I AM <span id="text-container"> </span></h1>
     </div>
-
     <div class="container">
       <div class="row mt-5">
         <div class="col-md-8 mx-auto d-flex align-items-center justify-content-center">
@@ -231,7 +233,7 @@
   </section>
   <!-- footer -->
   <section id="contact-me" class="mt-5 pt-5">
-    <footer class="bg-trans text-white p-4">
+    <footer class="bg-trans p-4">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -240,7 +242,6 @@
             <p>Phone: +91 9510310510</p>
           </div>
           <div class="col-md-6">
-            <h5>Follow Me</h5>
 
             <a href="https://twitter.com/Riishiiiiii" target="_blank" class="social-icons hvr-grow"><i
                 class="fab fa-twitter"></i></a>
@@ -256,7 +257,7 @@
   </section>
 
   <div id="custom-cursor"></div>
-
+  <script src="scripts/theme.js"></script>
   <script src="scripts/custom-cursor.js"></script>
   <script src="scripts/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -267,7 +268,7 @@
     AOS.init();
   </script>
   <script src="scripts/particles-config.js"></script>
-  <script src="scripts/lastfm.js"></script>
+  
 </body>
 
 </html>
