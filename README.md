@@ -28,15 +28,3 @@ GitHub Pages: Hosts the website.
 Navigation: Use the navigation bar to explore different sections of the website.
 Skills and Projects: Check out My skills and projects to learn more about his expertise and experience.
 Contact Me: If you'd like to get in touch with me, use the provided contact information or social media links.
-
-### Getting Started (For Developers)
-If you're a developer interested in exploring or contributing to this project, follow these steps:
-
-Clone this repository to your local machine.
-Open the project directory in your preferred code editor.
-Make modifications or additions as needed.
-Test your changes locally to ensure everything works as expected.
-Once satisfied, push your changes to your fork of the repository.
-Create a pull request detailing the changes you've made.
-Support
-If you encounter any issues while browsing the website or have any suggestions for improvement, please feel free to reach out to Me via email or through the contact form on the website.
